@@ -1,0 +1,10 @@
+.env
+bnc.key
+coins.txt
+slack_info.txt
+.vscode
+nohup.out
+database/*.sqlite
+test/*
+ignore/
+__pycache__
