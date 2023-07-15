@@ -38,7 +38,7 @@ class Binance:
         self.threaded_websocket_manager = ThreadedWebsocketManager(
             api_key=api_key, api_secret=api_secret
         )
-        self.database = SQLiteDB(os.getenv("DATABASE_PATH", "database/db.sqlite"))
+        self.database = SQLiteDB(os.getenv("DATABASE_PATH", "../database/db.sqlite"))
         # self.queue = Queue()
         self.logger = BinanceLogger(
             db=self.database, slack_client=WebClient(token=os.getenv("SLACK_API_TOKEN"))
