@@ -5,6 +5,7 @@ slack_info.txt
 .vscode
 nohup.out
 database/*.sqlite
+database/
 test/*
 ignore/
 __pycache__
